@@ -2,15 +2,17 @@ package com.example.toDo.ToDoListCreate;
 
 import java.text.DateFormat;
 
-public class Component {
+public class ElementsToDo {
     private DateFormat date;
-    private DateFormat time;
     private String notices;
 
-    public Component(DateFormat date, DateFormat time, String notices) {
+    public ElementsToDo(DateFormat date, String notices) {
         this.date = date;
-        this.time = time;
         this.notices = notices;
+    }
+
+    public ElementsToDo() {
+
     }
 
     public DateFormat getDate() {
@@ -21,13 +23,6 @@ public class Component {
         this.date = date;
     }
 
-    public DateFormat getTime() {
-        return time;
-    }
-
-    public void setTime(DateFormat time) {
-        this.time = time;
-    }
 
     public String getNotices() {
         return notices;

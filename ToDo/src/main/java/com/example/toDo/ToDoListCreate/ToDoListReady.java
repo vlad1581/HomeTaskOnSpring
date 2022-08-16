@@ -2,11 +2,11 @@ package com.example.toDo.ToDoListCreate;
 
 import java.util.List;
 
-public class ToDoListReady {
+public class   ToDoListReady {
     private String name;
-    private List<Component> components;
+    private List<ElementsToDo> components;
 
-    public ToDoListReady(String name, List<Component> components) {
+    public ToDoListReady(String name, List<ElementsToDo> components) {
         this.name = name;
         this.components = components;
     }
@@ -23,11 +23,11 @@ public class ToDoListReady {
         this.name = name;
     }
 
-    public List<Component> getComponents() {
+    public List<ElementsToDo> getComponents() {
         return components;
     }
 
-    public void setComponents(List<Component> components) {
+    public void setComponents(List<ElementsToDo> components) {
         this.components = components;
     }
 }
